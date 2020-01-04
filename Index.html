@@ -6,56 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-<style>
-.menu{
-    background: linear-gradient(rgba(15, 16, 15, 0.8901960784313725), rgba(15, 16, 15, 0.8901960784313725)), url(14bdf12687524fb2b73b8f45d6564859.webp);
-    width: 100%;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+        .menu {
+            background: linear-gradient(rgba(15, 16, 15, 0.8901960784313725), rgba(15, 16, 15, 0.8901960784313725)), url(14bdf12687524fb2b73b8f45d6564859.webp);
+            width: 100%;
 
-}
+        }
 
-.menu > .container{
-    display: flex;
-    justify-content: center;
-    }
-    .brand {
-        display: flex;
-    }
+        .menu>.container {
+            display: flex;
+            justify-content: center;
+        }
 
-    .menu-list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 75%;
-        flex-direction: row;
-    }
+        .brand {
+            display: flex;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 75%;
+            flex-direction: row;
+        }
 
 
-    .nav-item:hover{
-        background-color: white;
-        transition: all .2s;
-    }
-    .nav-item:hover > a {
-        color: black !important;
-        transition: all .2s;
-    }
-    .hero{
-        background-image: url('hero.png');
-        height: 700px;
-    }
-    .point img{
-        cursor: pointer;
-        transition: all .5s;
-    }
-    
-    .point:hover img{
-        opacity: 0.5;
-    }
-@media (max-width: 1024px) {
-    
-}
-</style>
-    </head>
+        .nav-item:hover {
+            background-color: white;
+            transition: all .2s;
+        }
+
+        .nav-item:hover>a {
+            color: black !important;
+            transition: all .2s;
+        }
+
+        .hero {
+            background-image: url('hero.png');
+            height: 700px;
+        }
+
+        .hero-tire img {
+            width: 484px;
+            height: 401px;
+        }
+
+        .point img {
+            cursor: pointer;
+            transition: all .5s;
+        }
+
+        .point:hover img {
+            opacity: 0.5;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-tire img {
+                width: 468px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-tire img {
+                width: auto;
+                height: 195px;
+
+            }
+        }
+    </style>
+</head>
 
 <body>
     <nav class="menu">
@@ -82,133 +102,143 @@
         </div>
     </nav>
     <main role="main">
-    <div class="text-white hero">
+        <div class="text-white hero">
 
-        <div class="container h-100">
-            <div class="d-flex flex-row flex-wrap justify-content-center  h-100">
-                <div class="d-flex flex-column animated slideInLeft">
-                    <div class="d-flex flex-column" style="    margin-bottom: 80px;">
-                        <p style="letter-spacing: 15px; color: #616569;" class="mt-5">IT'S PERFECT</p>
-                        <h1 class="m-0" style="font-size: 50px;font-weight: 800;">SOLIDPRO 700</h1>
-                        <hr class="bg-white w-100 mt-4" />
-                        <h3 class="m-0" style="font-size: 40px; font-weight: 500;">Ultimate Performance</h3>
-                        <h4>for harsh working envronment</h4>
+            <div class="container h-100">
+                <div class="d-flex flex-row flex-wrap justify-content-center  h-100">
+                    <div class="d-flex flex-column animated slideInLeft">
+                        <div class="d-flex flex-column" style="    margin-bottom: 80px;">
+                            <p style="letter-spacing: 15px; color: #616569;" class="mt-5">IT'S PERFECT</p>
+                            <h1 class="m-0" style="font-size: 50px;font-weight: 800;">SOLIDPRO 700</h1>
+                            <hr class="bg-white w-100 mt-4" />
+                            <h3 class="m-0" style="font-size: 40px; font-weight: 500;">Ultimate Performance</h3>
+                            <h4>for harsh working envronment</h4>
+                        </div>
+                        <div class="d-flex flex-column mb-auto" style="font-size: 25px; font-weight: 500;">
+                            <p class=" m-0">Improved groove and profile</p>
+                            <p class="m-0">Engineered to have a stronger tread</p class="m-0">
+                            <p class="m-0">Enhanced performance</p class="m-0">
+                            <p class="m-0">Good resistance to vibration and impact</p class="m-0">
+                        </div>
                     </div>
-                    <div class="d-flex flex-column mb-auto" style="font-size: 25px; font-weight: 500;">
-                        <p class=" m-0">Improved groove and profile</p>
-                        <p class="m-0">Engineered to have a stronger tread</p class="m-0">
-                        <p class="m-0">Enhanced performance</p class="m-0">
-                        <p class="m-0">Good resistance to vibration and impact</p class="m-0">
+                    <div class="align-items-center d-flex hero-tire animated slideInRight">
+                        <img src="herotext1.png" class="mt-5">
                     </div>
-                </div>
-                <div class="align-items-center d-flex  animated slideInRight">
-                    <img src="tire.webp" class="mt-5
-                    " style=" width: 484px; height: 401px; ">
                 </div>
             </div>
         </div>
-    </div>
-    <section>
-        <div class="container py-4">
-            <h4 style="
+        <section>
+            <div class="container py-4">
+                <h4 style="
             font-size: 17px; letter-spacing: 0.15em;
         ">PRODUCTS</h4>
-        
-            <div class="d-flex flex-wrap justify-content-between">
-                <div class="card border-0  point bg-light" style="width:237px">
-                    <img src="38335d_1af00e4f383448d58a2aa833491e93ff.webp" class="card-img-top" style="height: 133px;width:237px;" />
-                    <div class="card-body p-2">
-                        <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="card border-0  point bg-light" style="width:237px">
+                        <img src="38335d_1af00e4f383448d58a2aa833491e93ff.webp" class="card-img-top"
+                            style="height: 133px;width:237px;" />
+                        <div class="card-body p-2">
+                            <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                        </div>
                     </div>
-                </div>
-                <div class="ml-1 card border-0 point bg-light" style="width:237px">
-                    <img src="38335d_e4acb78eec7c4d97b7bc26dd69e08632.webp" class="card-img-top" style="height: 133px;width:237px;" />
-                    <div class="card-body p-2">
-                        <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                    <div class="ml-1 card border-0 point bg-light" style="width:237px">
+                        <img src="38335d_e4acb78eec7c4d97b7bc26dd69e08632.webp" class="card-img-top"
+                            style="height: 133px;width:237px;" />
+                        <div class="card-body p-2">
+                            <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                        </div>
                     </div>
-                </div>
-                <div class="ml-1 card border-0 point bg-light" style="width:237px">
-                    <img src="38335d_621f7dfda85640b29ab43ba977ddd56d.webp" class="card-img-top" style="height: 133px;width:237px;" />
-                    <div class="card-body p-2">
-                        <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                    <div class="ml-1 card border-0 point bg-light" style="width:237px">
+                        <img src="38335d_621f7dfda85640b29ab43ba977ddd56d.webp" class="card-img-top"
+                            style="height: 133px;width:237px;" />
+                        <div class="card-body p-2">
+                            <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                        </div>
                     </div>
-                </div>
-                <div class="ml-1 card border-0 point bg-light" style="width:237px">
-                    <img src="38335d_e709f6644ade4ef792e0a7b335d852d8.webp" class="card-img-top" style="height: 133px;width:237px;" />
-                    <div class="card-body p-2">
-                        <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                    <div class="ml-1 card border-0 point bg-light" style="width:237px">
+                        <img src="38335d_e709f6644ade4ef792e0a7b335d852d8.webp" class="card-img-top"
+                            style="height: 133px;width:237px;" />
+                        <div class="card-body p-2">
+                            <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                        </div>
                     </div>
+
                 </div>
-                
             </div>
-        </div>
-    </section><section>
-        <div class="container py-4">
-            <h4 style="
+        </section>
+        <section>
+            <div class="container py-4">
+                <h4 style="
             font-size: 18px; letter-spacing: 0.15em;
         ">QUICK LINKS</h4>
-            <div class="d-flex flex-wrap justify-content-between">
-                <div class="card border-0  point bg-light" style="width:237px">
-                    <img src="38335d_b11074257e6a4c6c96a66dcc9e071072.webp" class="card-img-top" style="height: 133px;width:237px;" />
-                    <div class="card-body p-2">
-                        <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="card border-0  point bg-light" style="width:237px">
+                        <img src="38335d_b11074257e6a4c6c96a66dcc9e071072.webp" class="card-img-top"
+                            style="height: 133px;width:237px;" />
+                        <div class="card-body p-2">
+                            <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                        </div>
                     </div>
-                </div>
-                <div class="ml-1 card border-0 point bg-light" style="width:237px">
-                    <img src="38335d_2682d93fdeea47db833e1540a324fc1c.webp" class="card-img-top" style="height: 133px;width:237px;" />
-                    <div class="card-body p-2">
-                        <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                    <div class="ml-1 card border-0 point bg-light" style="width:237px">
+                        <img src="38335d_2682d93fdeea47db833e1540a324fc1c.webp" class="card-img-top"
+                            style="height: 133px;width:237px;" />
+                        <div class="card-body p-2">
+                            <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                        </div>
                     </div>
-                </div>
-                <div class="ml-1 card border-0 point bg-light" style="width:237px">
-                    <img src="38335d_cc22a23211cd40748f005260e1ec9712.webp" class="card-img-top" style="height: 133px;width:237px;" />
-                    <div class="card-body p-2">
-                        <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                    <div class="ml-1 card border-0 point bg-light" style="width:237px">
+                        <img src="38335d_cc22a23211cd40748f005260e1ec9712.webp" class="card-img-top"
+                            style="height: 133px;width:237px;" />
+                        <div class="card-body p-2">
+                            <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                        </div>
                     </div>
-                </div>
-                <div class="ml-1 card border-0 point bg-light" style="width:237px">
-                    <img src="38335d_cee3a24c61384b5ab27ce982125d3c1f.webp" class="card-img-top" style="height: 133px;width:237px;" />
-                    <div class="card-body p-2">
-                        <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                    <div class="ml-1 card border-0 point bg-light" style="width:237px">
+                        <img src="38335d_cee3a24c61384b5ab27ce982125d3c1f.webp" class="card-img-top"
+                            style="height: 133px;width:237px;" />
+                        <div class="card-body p-2">
+                            <p class="card-title small font-weight-bold">Powerful performance, SOLIDPRO</p>
+                        </div>
                     </div>
+
                 </div>
-                
             </div>
-        </div>
-    </section>
-</main>
-<footer class="text-light bg-dark">
-    <div class="container py-4">
-      <div class="d-flex justify-content-center">
-        <img src="38335d_51658c5309a44c1c8474028e9ecf9093.webp" alt="" style="height: 14px; width: 196px;">
-        <div class="d-flex flex-column flex-wrap px-3" style="
+        </section>
+    </main>
+    <footer class="text-light bg-dark">
+        <div class="container py-4">
+            <div class="d-flex justify-content-center">
+                <img src="38335d_51658c5309a44c1c8474028e9ecf9093.webp" alt="" style="height: 14px; width: 196px;">
+                <div class="d-flex flex-column flex-wrap px-3" style="
         font-size: 10px;
     ">
-            <p class="m-0">(50932) 2595 Kimhae-daero Gimhae-si Gyeongsangnam-do, Korea</p>
-            <div class="d-flex flex-wrap justify-content-between w-75">
-                <p>Tel. 82-55-333-0771</p>     
-                <p>Fax. 82-55-333-0778</p>
+                    <p class="m-0">(50932) 2595 Kimhae-daero Gimhae-si Gyeongsangnam-do, Korea</p>
+                    <div class="d-flex flex-wrap justify-content-between w-75">
+                        <p>Tel. 82-55-333-0771</p>
+                        <p>Fax. 82-55-333-0778</p>
+                    </div>
+                    <h5 class="font_5 mt-auto" style="font-size:11px;"><span style="font-size:11px;"><span
+                                style="font-weight:bold;"><span style="color:#C9C9C9;">COPYRIGHT 2015 NEXEN CORPORATION.
+                                    ALL RIGHTS RESERVED.</span></span></span></h5>
+                </div>
+                <div class="d-flex flex-column">
+                    <span style="background-color: #969696;">&nbsp;&#8203;​NEXEN GROUP FAMILY SITE&nbsp;</span>
+                    <a href="#" class="text-light">
+                        Nexen Corporation</a>
+                    <a href="#" class="text-light">Nexen Tire Corporation</a>
+                </div>
             </div>
-            <h5 class="font_5 mt-auto" style="font-size:11px;"><span style="font-size:11px;"><span style="font-weight:bold;"><span style="color:#C9C9C9;">COPYRIGHT 2015 NEXEN CORPORATION. ALL RIGHTS RESERVED.</span></span></span></h5>
         </div>
-        <div class="d-flex flex-column">
-            <span style="background-color: #969696;">&nbsp;&#8203;​NEXEN GROUP FAMILY SITE&nbsp;</span>
-            <a href="#" class="text-light">
-            Nexen Corporation</a>
-            <a href="#" class="text-light">Nexen Tire Corporation</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
