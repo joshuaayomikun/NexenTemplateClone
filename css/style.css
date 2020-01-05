@@ -6,6 +6,7 @@
 .menu>.container {
     display: flex;
     justify-content: center;
+    position: absolute;
 }
 .brand {
     display: flex;
@@ -39,6 +40,11 @@
     background-image: url('../images/hero.png');
     height: 700px;
 }
+
+.hero > div {
+    padding-top: 130px;
+}
+
 .hero-tire img {
     width: 484px;
     height: 401px;
