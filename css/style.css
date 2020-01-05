@@ -1,39 +1,47 @@
 .menu {
     background: linear-gradient(rgba(15, 16, 15, 0.8901960784313725), rgba(15, 16, 15, 0.8901960784313725)), url(../images/14bdf12687524fb2b73b8f45d6564859.webp);
     width: 100%;
-    height: 130px;
     position: absolute;
 }
 .menu>.container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 .brand {
     display: flex;
     position: relative;
-    width: 150px;
+    width: 181px;
 }
-.brand a {
+.brand > a {
     display: flex;
     background-color: #fff;
     position: absolute;
-    padding: 1em 2em;
+    padding: 2em 3em;
     left: 0;
     top: 0;
+    cursor: unset;
+}
+.brand > a > img {
+    height: auto;
+    width: 50px;
+    cursor: pointer;
 }
 .menu-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 75%;
+    width: 100%;
     flex-direction: row;
 }
-.nav-item:hover {
-    background-color: white;
-    transition: all .2s;
+
+.menu-list li {
+    width: 152px;
+    text-align: center;
 }
-.nav-item:hover>a {
-    color: black !important;
+
+.nav-item:hover {
+    background-color: #202120;
     transition: all .2s;
 }
 .hero {
