@@ -1,0 +1,69 @@
+.menu {
+    background: linear-gradient(rgba(15, 16, 15, 0.8901960784313725), rgba(15, 16, 15, 0.8901960784313725)), url(../images/14bdf12687524fb2b73b8f45d6564859.webp);
+    width: 100%;
+    height: 130px;
+    position: absolute;
+}
+.menu>.container {
+    display: flex;
+    justify-content: center;
+}
+.brand {
+    display: flex;
+    position: relative;
+    width: 150px;
+}
+.brand a {
+    display: flex;
+    background-color: #fff;
+    position: absolute;
+    padding: 1em 2em;
+    left: 0;
+    top: 0;
+}
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    flex-direction: row;
+}
+.nav-item:hover {
+    background-color: white;
+    transition: all .2s;
+}
+.nav-item:hover>a {
+    color: black !important;
+    transition: all .2s;
+}
+.hero {
+    background-image: url('../images/hero.png');
+    height: 700px;
+}
+
+.hero > div {
+    padding-top: 130px;
+}
+
+.hero-tire img {
+    width: 484px;
+    height: 401px;
+}
+.point img {
+    cursor: pointer;
+    transition: all .5s;
+}
+.point:hover img {
+    opacity: 0.5;
+}
+@media (max-width: 1024px) {
+    .hero-tire img {
+        width: 468px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-tire img {
+        width: auto;
+        height: 195px;
+    }
+}
