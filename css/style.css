@@ -2,11 +2,11 @@
     background: linear-gradient(rgba(15, 16, 15, 0.8901960784313725), rgba(15, 16, 15, 0.8901960784313725)), url(../images/14bdf12687524fb2b73b8f45d6564859.webp);
     width: 100%;
     height: 130px;
+    position: absolute;
 }
 .menu>.container {
     display: flex;
     justify-content: center;
-    position: absolute;
 }
 .brand {
     display: flex;
