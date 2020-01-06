@@ -1,19 +1,26 @@
+body{
+    overflow-x: hidden;
+}
+
 .menu {
     background: linear-gradient(rgba(15, 16, 15, 0.8901960784313725), rgba(15, 16, 15, 0.8901960784313725)), url(../images/14bdf12687524fb2b73b8f45d6564859.webp);
     width: 100%;
     position: absolute;
 }
+
 .menu>.container {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
+
 .brand {
     display: flex;
     position: relative;
     width: 181px;
 }
-.brand > a {
+
+.brand>a {
     display: flex;
     background-color: #fff;
     position: absolute;
@@ -22,11 +29,13 @@
     top: 0;
     cursor: unset;
 }
-.brand > a > img {
+
+.brand>a>img {
     height: auto;
     width: 70px;
     cursor: pointer;
 }
+
 .menu-list {
     display: flex;
     flex-wrap: wrap;
@@ -48,25 +57,84 @@
     background-color: #202120;
     transition: all .2s;
 }
+
 .hero {
     background-image: url('../images/hero.png');
     height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.hero > div {
+.hero>div {
     padding-top: 130px;
+}
+
+.text-tire{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
 }
 
 .hero-tire img {
     width: 484px;
     height: 401px;
 }
+
+.hero-text1 {
+    margin-bottom: 80px;
+}
+
+.hero-text2 {
+    font-size: 25px; 
+    font-weight: 500;
+}
+
+.hero-text1 p {
+    letter-spacing: 15px; 
+    color: #616569;
+}
+
+.hero-text1 h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.hero-text1 h3 {
+    font-size: 40px; 
+    font-weight: 500;
+}
+
+.products-text, .quick-links-text {
+    letter-spacing: 0.15em;
+}
+
+.products-text{
+    font-size: 17px;
+}
+
+.quick-links-text {
+    font-size: 18px;
+}
+
+.products, .quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products > div, .quick-links > div {
+    margin: .5em;
+}
+
 .point img {
     cursor: pointer;
     padding: 1rem;
     border-radius: 30px;
     transition: all .5s;
 }
+
 .point:hover img {
     opacity: 0.5;
 }
@@ -83,13 +151,119 @@
     color: #c9c9c9;
 }
 @media (max-width: 1024px) {
-    .hero-tire img {
-        width: 468px;
+
+    .menu-list li {
+        width: 139px;
     }
+
+    .hero-tire img {
+        width: 370px;
+        height: auto;
+    }
+
 }
+
 @media (max-width: 768px) {
+
+    .menu-list li {
+        width: 93px;
+    }
+    
+    .menu-list li a {
+        font-size: 14px;
+    }
+
+    .hero{
+        height: 600px;
+    }
     .hero-tire img {
         width: auto;
-        height: 195px;
+        height: 201px;
     }
+
+    .hero-text1 h1 {
+        font-size: 40px;
+    }
+
+    .hero-text1 h3 {
+        font-size: 30px;
+    }
+
+    .hero-text1 h4 {
+        font-size: 20px;
+    }
+
+    .hero-text2 {
+        font-size: 20px;
+    }
+
+    .products, .quick-links {
+        justify-content: space-around;
+    }
+}
+@media (max-width: 425px) {
+    .menu {
+        position: relative;
+    }
+
+    .menu > .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .brand {
+        width: 100%;
+        height: 122px;
+    }
+
+    .brand>a {
+        right: 0;
+        justify-content: center;
+    }
+
+    .menu-list li {
+        width: 63px;
+    }
+
+    .menu-list li a {
+        font-size: 9px;
+    }
+
+    .hero>div {
+        padding-top: 0px;
+    }
+
+    .text-tire {
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero-text1 {
+        margin-bottom: 35px;
+    }
+
+    .hero-text1 p {
+        margin-top: 0;
+    }
+
+    .hero-text1 h1 {
+        font-size: 30px;
+    }
+
+    .hero-text1 hr {
+        margin: 10px !important;
+    }
+
+    .hero-text1 h3 {
+        font-size: 20px;
+    }
+
+    .hero-text1 h4 {
+        font-size: 15px;
+    }
+
+    .hero-text2 {
+        font-size: 15px;
+    }
+
 }
