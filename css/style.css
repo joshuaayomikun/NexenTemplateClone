@@ -17,27 +17,31 @@
     display: flex;
     background-color: #fff;
     position: absolute;
-    padding: 2em 3em;
+    padding: 1.2em 1.5em 1.1rem;
     left: 0;
     top: 0;
     cursor: unset;
 }
 .brand > a > img {
     height: auto;
-    width: 50px;
+    width: 70px;
     cursor: pointer;
 }
 .menu-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
     flex-direction: row;
 }
 
 .menu-list li {
-    width: 152px;
+    width: 140px;
     text-align: center;
+}
+.menu-list li a{
+    font-size: 13px;
+    font-weight:700
 }
 
 .nav-item:hover {
@@ -59,10 +63,24 @@
 }
 .point img {
     cursor: pointer;
+    padding: 1rem;
+    border-radius: 30px;
     transition: all .5s;
 }
 .point:hover img {
     opacity: 0.5;
+}
+.animated {
+    animation-duration: 3s;
+}
+.point p {
+    text-align: center;
+    color: rgba(0,0,0,.6);
+}
+#rightLink span{
+    font-size: 12px;
+    font-weight: bold;
+    color: #c9c9c9;
 }
 @media (max-width: 1024px) {
     .hero-tire img {

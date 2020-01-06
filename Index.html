@@ -5,10 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        document.onload = function () {
+            
+        }
+    </script>
+</head>
 
 <body>
     <nav class="menu">
@@ -16,7 +22,10 @@
             <div class="brand"><a href="index.html"><img src="images/logo.png"></a></div>
             <div class="d-flex flex-column w-100">
                 
-                <div class=" p-3 text-right"><a style="font-size: 10px; text-decoration: none;" href="#" class="text-white">Language ▷ ENGLISH</a></div>
+                <div class="text-right">
+                    <a style="font-size: 10px; text-decoration: none;" href="#" class="text-white">Language ▷ ENGLISH</a>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATAAAACmCAMAAABqbSMrAAAA81BMVEX+/v7PEysAJHz////t7e3s7OzMACHPDSj/9PfYbXnKLT8AH3v5+fnz8/MAAG7w8PA4S4T5/f81S4rk6fLb4fEAGHMyRoYAInwAB3Dr8PnU2ecpP4DFABnBQlEAE3UADnP45OfFPEwlO37HABDs0dTKAB3CMkL14OP/7/MAGXKrt9MAJHaIlr3z9//lnKXvucDGz+V2hq/PWWYAAGNPYpnzxcz20tjDAB3CCyfbfYgAJ3jgipTFGjHOR1bQgorGzNxNYJAcNXvDSlicp8Dgs7hFWZTDAAbKX2vYb3vRM0Q4ToG2NUbEeoS+anYmPHl7iLBpeqfFlfSwAAAPZElEQVR4nO2dC1vcNhaGDZpbEl+WDmBumRkYCKQbmlDastmwSSAbkt3uJv3/v2ZtS7J1PbrYHg9dnz5PizogH72jy6dj+yhAQWHDQW5JUUIhLkWkVBQGIS5FRWFISgku4ToQ/rMB/ihQVRKxlQhVBriEPxquqV+DIJAdC7Bjw4h1k7oSkVJgcAysEqpED2wd/GofWGR2LFI41jowT796YD2wRw5syM3XomNkhh6uHpivXyWwAecYLkUBW8KuBBFXSthaEFdJoKokUlUScZUkXOvWzq9gWNgAFUZKCS6FuBThUoRLIS4luBTg0gCXzJWEXCVQlevqF+H9p553mvQr6IH1wHpgrfuF8h3S0B8YtOQO6LyI/4xOrqQSMrkSx/B0OiBtZUtcJfz+j1RSrmy0yiH2S64yUlTp5hf7RSqq5NVFkGDDxTCJ8gJdcvFHdMnNfpzu719uFbaPbctYusSFS20pScgqfoFtgm3BlUpPTFV6+HVZNjUiV7soLr7grp3QHsYuuYPF+9+KUsh9Vv3mh493JyeHue1iK34+oSX8EfeZusQUDqfkAuj9i+PcXmA7PmZK9xPiydbHE66Sk6p+wC/eE87Lw7tvn0LS1OD1vXTtp/f/5CUKpYG76+LF0ZPfGEaioa0fD+PZsyZttk2BPTkba2z0dILI9X9o9urx5qt9RKax1/84GgnXXT796YK6R4a3AOx4NLrJkWmJ5cj2nqWbTVm6UwEbbWhszAB71tilN9P5X0tcQY5LuOpRjoui0AEbb2yMwF6WIzuJG3O7O2Dp/CWLaynhuv1pwlAAgG2MR0dfwIGJsoHZkONdAUvnm68uS1zHy/FY6l0TjkAJjNMoGFhmoxsIWTEw42Jg1h2c3QDLcVkPRgFYiA0vqxfHJWgTsqCZXtYFMKe5K6CEIqIuuKjA5EXVM8fw9J+vmLv1ka0eWDr/O4drLFxLHIxQtIIDViKDBubuHmmA79BcNTAW18RqMEJbowwYX4ELsscAjMUVKnCdyXMXDCx897czYbkwI6s1l60SmOPcZQEs+/T8rQ+yopd5jcrVAWNxhcLcNdbi0gAb0rvCWWXnb29GSmQaYvWk7KqACTJV7l23alxBdS+EIIqwkbWzqHDx9kbqZUtYZCBfZKsB5qjq+cYJhMQbBASZODA3YPVPdZnzsFwFMF7VK+cuLS4asqHRCvG+5AH+Q+Q9l6WOyNoHJk318iZIMxhxs7ZJAFW5l9y/+/ymQiYOTIsN027sGMloGVgq4lLsGWFcV9dTCNjhbF4hUw1M3Mt0wx3rMhdk7QIz6S7TYNy+ejmLYWDP0p29X94gchGvgbk7d2hUm8DsVL2+KdtXO7N0UwRGFks8o2XAsgvtxL+8Mc5l+q/FaY/ZBrCU4PKRqVUzplcv5/mMXAIjkz7dixd2WQDLWkGRIRUyEmKEkFmr/7Z6mIBrqZjqJ5reharelVu8zRKKggEbrdg6oXtpvpfJuswsZe32mO0AS+cp2LvOtDIVu1/hyoAdDPTRihJYgQxaMcemXhYQKWtYAVoAlq2MO94yNf+b/av5rHI7Pkj0m++qh1XIqJSVRUYhZfXXtVL/zQPLVf0lMBiXxpUxrnCltsBoa5iBKYuMMazLAhtd1jQwaIu9YSUkZjPeYxdgeXvm/IopNMVCZMC9rClgKR4Uokzlq7FZGWfiXkUCppz02RaBuqwusiZ7mGvwWe5dL2fyeBAn/ZA1Iiuqr41BVvUyd2T6FbM5YO7BZxFXvjLKd8LiAw4R/2zF/qHaHxiZjZTVbZgaG5IewWfWxamydxXApkC0QgmMrJgWyMxR2ZaASTLVsXdNGd2lAFb8km4vqfkz04Zpg+tlknNlVJa6Vf63AWDSbVlR1StlauUrhKsGMNrL6PSv0GUez2TUB2YRfHYUEk0ByyR0qf6RRv1jXaZ2r7xbzrpXC1ia49qB94wGXNOrPYxLy0yKVthM+pWxGyaVlDUEspEYyK7Xw/K5iw0+uwsJvAnKVkcIGDfpcyH+SxgYnv5tVkx9GECIZNQAVkZTkR6XQUjoVkYO2EHI3QShwhX7IwtXmZmk/t1DjNWK6Q9MEhKOwWe9kBCBJUS44i8d3hppqIm9TGigefov95gewFIRV3u9iwBz2EsakOk2TFUvU4/Nqpf59TCTqicyVQPMBVdTwGz2mF8tbsp5ATMFn21UvW0zmwPG6jJlIHt8ZvOAgTswVnchp5v+FBckUy2AGaIVdsh0UVnT3fKTeOYILOZv+ktzF6O75AuzQsIemDJagcWFWYfJyFhdpglkg+rfBViw9UMtVT81qHolsCl/E4QsljZK34xM28v0bdgK6Y82wIJLMgcoe5dOpiKKa+6Mi73NJm2NbJS+ytibcvq75Tpk5Q9WwOqoere5SwKmu/PtZJv4P1opWzz2b3y82AFY/qWQl1yYa5iDz4WQ8DIY2F2852VxfP35Q1AhOxLs4eHLqRZY4AQsfH38sBTrB3EFaPrHdRzvFW1zbWAMPoySTOtY9X1eLCQ7XzQDLAjPz+XaMS7tsK/VrC19tIK+ce9pjIfwx7WA+VReq1nE6Ot/5NXN6pHNrswa2Kr9Iq+AlNEKRul3amsLTHiFuQdm8gt8Tr9D64G5GXqMwDqltsbAhiwwPilQE+uvr30FgXVnwut/xPDSefH+SWf29V9jHbCN2+7cevJlwRJKhFeYX5yNOjM9r2wD3509nANbo8Ux5PX/py17YG7WA3O0HpijicDIYkmSFfXAJMuAFUajFZgbyRjGZxXoLbflacKNRU7p98BkI8B0aRh6YKL1wBytB+ZoPTBHE4FpkxX1hm15OmDyM5cBnV6H6UzUYb3SN1i/NXK0Hpij9cAcrQfmaBpgeAt+0QOTjAJTHnHR6zDZqA5TpmHogcnWb40crQfmaD0wRzMAG6kz2q/CIK+782rMAxOOuJjcP+3ObgFkXbp1qj/iYphMOjTo6Z2F+c9bswCIVtR7KLimrevTO6RjKbdGSYdPiK3r82HUvR6Yo3s9MEf3KDD2+bBhD0zvHgXGHnFBD8nqxqN1BQYdcdHqhfUrEP64FjBD5XXcBg/krL/86luk+J/sqzrN97Aqd1KtdkHP6W99/Iuvffv3J9D3xbvnoh3//p9FBaIOMHT+39+l6p+XrwSiDx+/+TcMzCpw53f02U68+Wqq6WMI47o947epo7Ojn39l3wyo1cPy7BVL8QrVW5ToMn8d3/P4NjgNg8dLvkxGcXVj0EWGS8qd9fOvqNE5DHytuUz55vHOtwqYfe4dBa8yj4QWlyI3M8VVQbN85xu4kBJZmWegTMXrC4zU4pLdyQfXQnGQDYNr+8otb8XVGwMyTV5gFOhSvpmB6Y+4cM4qoMbFvNCu6l3LCtf0aha7AdstEwvqe5k6V4ovMvekkQAu/dyF1L2LG4xF2g3nVDJVwmcAmS4LIsmS55RKxj+lnz2ugK6MisEYlIOxyJvqkQ6rSpOkQ3avz+LqmO+/MWBVQioHXDcsrpezPBWYVzosJk+G+uJAiqzAlIq3FWC+vasajEX+rtQ7Qx2T8k3Xy4AkbE5HJFgccWGi5YFrgw5GJKQ7807pVw5MzRwKH2vh0MtsjriAeXniKnvXdzYHTp2kkTuGFVOTHl5EZlgB7I64AHDtuKr6bDDel7j2y5RB3jkQGWcoMqiXger/xLxi2h5xocV1WUPVb9M0s0ybvbNsFv829TIEHXGRffzjnQlZjZR+Hqpe1l1infUS32b/mJBp1H+lywxS1htYlSLbr3cxuQcbyxQspuJl/eGQAZkSTSumJzB/IRFUuBR9v5H08EwuRm0vk9T/mSBltenhfZJGanEhLa4NUaaqUzU2dACBUcqCuYSZc8tVwOyPuCDO1N0ETb+nc93319iJDQSZvpdN8g0ThGxXHS9zPuKiXniQnHGmwdXoISpGXaY/XRIB6t8xWlFH1ReD8TucxLjBQ1QsN0yg+j+Uzy5x2ktarIyG3mXKm9rwQVD11f+JODBtgeUZNOczVyExHi1ZVT8jW+yVAbMbmJCUDXIpyzptD8yk6o3BZ9PhEa0AYw/i0DiOoJTMSDxTzvKIC4u5SyNTg6AKD5qtWWAp3TD5zGW3JKW8MP1bHXEBz13IHJGwzlffxnGJm3bTv+b0o+I2OYPM4ogLj2iqsMW2T2LcyoGczNFVBvUvXEdU/xiY4YiLWsFnlAuJ1CHnc4uHCjcUyDbtJWfOMpVX9VepU776Vo+thpEh7VHWnC6Dgd35TvU0+OyaUbzNHrZpGpjIJvZ/DQL7VCv4XB44uBbAyAVmFhsmENnBQB+tAB9dwDKVrZvTXfvf3U9DaB9YarvHlJFRXSY8UMfdBNE+sqlR9Wy8aw/YYncHDJuN+ldLWRSIhMhiCT4UbAw+4xP01heYlchQHYR3gZf+/FcUR1xoHjsH4l20d5Hbsj4Pl60GmGHFxKe7PYdOSLJ+Tt8i+Gx/ClVXwPCe1vxMhnIuC4HNtwTMHO+qhWuFPQxGhvTIwDyuAjDzIyVFePDRACsHJhTIFpCNoaSR/KSvDQ9Wql4+RnzNgVlty58Xuow2XExWpDviwlKm+jxm2ykwS11WNXx5GpmPuLAI4Hx3PeNsbYA5SlnxFWYVMECm2sbq7X3vAJhlIHusAKY6scECl88ZZzrPOwG2af8YC5hVIABi9ZWQ8DvjTG3dAbO8KTc29DDjXeyrukJC9LozYJmZQow5sgcoaWRw/u7m4WHJG57qC17bf1xfx83a9TZ91+yLeOHKbktghw1fPr7+/CYohRl5f60alhmyYyFZETGiLibFuWfnp4WRM9DOL4p1NZcc0+n0ABs5t8y1tI0L28xHW/RoqgW+Hr72KTl0jZSwk2GSyFV6esKUBlnj8JRE3rPF6gr7FS1CllAivsJMHkvE+HApxAG0EIfso+IzKnhxW0n/RPjPNJUUvxjKpepoKvxZoqgywl6G2S9mHymr9Pcrvza+AIqwJwRYwsYnwK1RiEuklnBYAsvrHHB1stFINOTmQ7YSUqXGMa4SXMeQqyRRVSL4BVQJ+TXQ+hVEQ9kvCFizjgHAoi6BOfq1FsA67WGOfq0FsMfVw4RoBZ4JcSniSnRy5Ur8DQJeogBVQpWQqMC6+sUdcUFlLLkXEnIlzHsQcqWA/UIHXCWJqpJQVQnXK/hFae38EpU+ey8EqbsrLvGnVOI62h5G6+CXEtifbd7pgfXAHjswZZ1roJ3WwC8xHsZ+k4jfIdE9EVci96f0jgmV0NVIVaUe2Dr59T9919BW4vjuZwAAAABJRU5ErkJggg==" width="30">
+                </div>
                 <ul class="navbar-nav menu-list">
                     <li class="nav-item m-2">
                         <a class="nav-link text-white" href="#">Company</a>
@@ -57,7 +66,7 @@
                         <p class="m-0">Good resistance to vibration and impact</p class="m-0">
                     </div>
                 </div>
-                <div class="align-items-center d-flex hero-tire animated slideInRight">
+                <div class="align-items-center d-flex hero-tire animated bounce" id="bounce">
                     <img src="images/tire.webp" class="mt-5
                     " style=" width: 484px; height: 401px; ">
                 </div>
@@ -67,7 +76,7 @@
     <section>
         <div class="container py-4">
             <h4 style="
-            font-size: 17px; letter-spacing: 0.15em;
+            font-size: 25px; letter-spacing: 0.15em;
         ">PRODUCTS</h4>
         
             <div class="d-flex flex-wrap justify-content-between">
@@ -100,9 +109,7 @@
         </div>
     </section><section>
         <div class="container py-4">
-            <h4 style="
-            font-size: 18px; letter-spacing: 0.15em;
-        ">QUICK LINKS</h4>
+            <h4 style="font-size: 25px; letter-spacing: 0.15em;">QUICK LINKS</h4>
             <div class="d-flex flex-wrap justify-content-between">
                 <div class="card border-0  point bg-light" style="width:237px">
                     <img src="images/AboutQiyu1.webp" class="card-img-top" style="height: 133px;width:237px;" />
@@ -128,33 +135,38 @@
                         <p class="card-title small font-weight-bold">Contact Us @ QIYU</p>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
 </main>
 <footer class="text-light bg-dark">
-    <div class="container py-4">
-      <div class="d-flex justify-content-center">
-        <img src="images/Brand1.webp" alt="" style="height: 14px; width: 196px;">
-        <div class="d-flex flex-column flex-wrap px-3" style="
-        font-size: 10px;
-    ">
-            <p class="m-0">China Forklift tyre factory, China</p>
-            <div class="d-flex flex-wrap justify-content-between w-75">
-                <p>Tel. 0086-183-5764-0034</p>     
-                <p>Fax. 0086-183-5764-0034</p>
+    <div class="container pt-4 pb-1">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex">
+                <img src="images/Brand1.webp" alt="" style="height: 14px; width: 196px;">
+                <div class="d-flex flex-column flex-wrap px-3" style="font-size: 10px;">
+                    <p class="m-0">China Forklift tyre factory, China</p>
+                    <div class="d-flex flex-wrap justify-content-between w-75">
+                        <p class="mb-0">Tel. 0086-183-5764-0034</p>
+                        <p>Fax. 0086-183-5764-0034</p>
+                    </div>
+                </div>
             </div>
-            <h5 class="font_5 mt-auto" style="font-size:11px;"><span style="font-size:11px;"><span style="font-weight:bold;"><span style="color:#C9C9C9;">Copyright 2020 QIYU FORKLIFT TIRES. All Rights Reserved. Design by Cisqo Software</span></span></span></h5>
+
+            <div class="d-flex flex-column" id="rightLink">
+                <span style="background-color: #969696;">&nbsp;&#8203;QIYU FORKLIFT TIRES&nbsp;</span>
+            </div>
         </div>
-        <div class="d-flex flex-column">
-            <span style="background-color: #969696;">&nbsp;&#8203;QIYU&nbsp;</span>
-            <a href="#" class="text-light">
-                QIYU Corporation
-            </a>
-            <a href="#" class="text-light">QIYU Tire Corporation</a>
-        </div>
-      </div>
+        <h5 class="font_5 mt-auto text-center" style="font-size:11px;">
+            <span style="font-size:11px;">
+                <span style="font-weight:bold;">
+                    <span style="color:#C9C9C9;">
+                        Copyright 2020 QIYU FORKLIFT TIRES. All Rights Reserved. Design by
+                        <a href="https://cisqosoftware.azurewebsites.net/" style="text-decoration:none">Cisqo Software</a> 
+                    </span>
+                </span>
+            </span>
+        </h5>
     </div>
   </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
